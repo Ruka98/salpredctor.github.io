@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang= "en">
+    <head>
+       <meta charset="UTF-8">
+       <meta http.equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scaler=1.0">
+       <title> Predictor</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="title">
+                Laptop 
+            </div>
+
+            <form action="/" method="POST">
+            <div class="inputfield">
+                <label for="Chlorophyll µg/L"> Chloraphyll(µg/L) </label>
+                <input type="float" class="input" name="Chlorophyll µg/L">
+            </div>
+
+            <div class="inputfield">
+               <label for="Temp °C"> Temp °C </label>
+                <input type="float" class="input" name="Temp °C">
+            </div>
+
+            <div class="inputfield">
+                <label for="TDS mg/L"> TDS mg/L </label>
+                <input type="float" class="input" name="TDS mg/L">
+            </div>
+
+            <div class="inputfield">
+                <label for="Depth m"> Depth m </label>
+                <input type="float" class="input" name="Depth m">
+            </div>
+
+            <div class="inputfield">
+                <label for="elnino"> Is that elnino happening </label>
+                <input type="checkbox" class="input" name="Elnino">
+            </div>
+
+            <div class="inputfield">
+                <label for="pressure"> Pressure </label>
+                <input type="float" class="input" name="pressure">
+            </div>
+
+            <div class="inputfield">
+                <input type="submit" class="btn" Value="Predict price">
+            </div>
+            </form>
+            <dev class='result'>
+                <p>
+                    Estimated Salinity :{{pred}} psu
+                </p>
+            </dev>
+        </div>
+    </body>
+</html>
